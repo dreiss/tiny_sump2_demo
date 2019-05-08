@@ -1,6 +1,9 @@
 #-- Synopsys, Inc.
 #project files
 
+add_file -verilog -lib work "design/stateful.v" 
+add_file -verilog -lib work "design/top.v" 
+add_file -constraint -lib work "constraints/clock.sdc"
 #implementation: "tiny_sump2_demo_Implmnt"
 impl -add tiny_sump2_demo_Implmnt -type fpga
 

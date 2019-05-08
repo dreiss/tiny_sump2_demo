@@ -1,0 +1,25 @@
+set_io data_async[0] B8  # P19
+set_io data_async[1] A8  # P20
+set_io data_async[2] B7  # P21
+set_io data_async[3] A7  # P22
+set_io strobe_async[0] B6  # P23
+set_io strobe_async[1] A6  # P24
+
+set_io data_out[0] C2  # P4
+set_io data_out[1] D2  # P6
+set_io data_out[2] E2  # P8
+set_io data_out[3] G2  # P10
+
+set_io extra_gnd[0] C1  # P5
+set_io extra_gnd[1] D1  # P7
+set_io extra_gnd[2] E1  # P9
+set_io extra_gnd[3] H1  # P11
+
+# Built-in LED
+set_io LED B3
+
+# USB
+set_io USBPU A3
+
+# 16MHz clock
+set_io CLK B2
