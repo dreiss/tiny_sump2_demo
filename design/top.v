@@ -4,6 +4,9 @@ module top (
   output [3:0] data_out,
   output [3:0] extra_gnd,
 
+  input uart_rx,
+  output wire uart_tx,
+
   output USBPU,
   output LED,
   input CLK
@@ -39,5 +42,22 @@ stateful st(
 
 // Extra ground pins for LEDs.
 assign extra_gnd = 0;
+
+
+// Integrated Logic Analyzer.
+wire [15:0] ila_events;
+
+assign ila_events[3:0] = data_in;
+assign ila_events[5:4] = strobe;
+assign ila_events[9:6] = st.state;
+assign ila_events[13:10] = data_out;
+assign ila_events[15:14] = 0;
+
+sump2_top s2(
+  .clk_in(CLK),
+  .uart_wi(uart_rx),
+  .uart_ro(uart_tx),
+  .events_din(ila_events));
+
 
 endmodule

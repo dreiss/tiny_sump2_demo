@@ -15,6 +15,9 @@ set_io extra_gnd[1] D1  # P7
 set_io extra_gnd[2] E1  # P9
 set_io extra_gnd[3] H1  # P11
 
+set_io uart_rx A2  # P1
+set_io uart_tx A1  # P2
+
 # Built-in LED
 set_io LED B3
 

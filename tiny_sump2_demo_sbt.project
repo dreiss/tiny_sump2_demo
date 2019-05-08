@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2017.08.27940 - Bui
 ProjectName=tiny_sump2_demo
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=design/stateful.v=work,design/top.v=work
+ProjectVFiles=design/stateful.v=work,design/top.v=work,ila/core.v,ila/mesa2ctrl.v,ila/mesa2lb.v,ila/mesa_ascii2nibble.v,ila/mesa_byte2ascii.v,ila/mesa_core.v,ila/mesa_decode.v,ila/mesa_phy.v,ila/mesa_tx_uart.v,ila/mesa_uart.v,ila/spi_byte2bit.v,ila/spi_prom.v,ila/sump2.v,ila/sump2_top.v,ila/time_stamp.v
 ProjectCFiles=constraints/clock.sdc
 CurImplementation=tiny_sump2_demo_Implmnt
 Implementations=tiny_sump2_demo_Implmnt
