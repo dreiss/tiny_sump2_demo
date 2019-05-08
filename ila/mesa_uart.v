@@ -266,7 +266,8 @@ always @ ( posedge clk ) begin : proc_s1
 //baud_rate_loc[15:0] <= 16'd109;// 100 MHz / 921600 baud
 //baud_rate_loc[15:0] <= 16'd104;//  96 MHz / 921600 baud = WORKS
 //baud_rate_loc[15:0] <= 16'd104;//  12 MHz / 115200 baud = WORKS 
-  baud_rate_loc[15:0] <= 16'd24;//   24 MHz / 921600 baud = WORKS
+//baud_rate_loc[15:0] <= 16'd24;//   24 MHz / 921600 baud = WORKS
+  baud_rate_loc[15:0] <= 16'd33;//    4 MHz / 115200 baud = WORKS
 //baud_rate_loc[15:0] <= 16'd12;//   12 MHz / 921600 baud = DOESNT WORK
 //bit_lock_jk   <= 1;
 

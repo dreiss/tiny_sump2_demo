@@ -160,7 +160,7 @@ sump2
   .trigger_nth_en (  0                      ),
   .trigger_dly_en (  0                      ),
   .trigger_wd_en  (  0                      ),
-  .freq_mhz       (  16'd96                 ),
+  .freq_mhz       (  16'd16                 ),
   .freq_fracts    (  16'h0000               )
 )
 u_sump2
