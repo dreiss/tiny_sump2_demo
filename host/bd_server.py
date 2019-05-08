@@ -564,14 +564,14 @@ class Backdoor_Mesa_UART:
           except:
             addr_str = "%08x" % each_addr;
             print("ERROR: Invalid LocalBus Read >" +
-                   addr_str + "< >" + rts_mesa + "< >" + rts_dword + "<");
+                   addr_str + "< >" + repr(rts_mesa) + "< >" + rts_dword + "<");
             if ( self.dbg_flag == "debug" ):
               sys.exit();
             rts += [ 0xdeadbeef ];
       else:
-        print("ERROR: Invalid LocalBus Read >" + rts_mesa + "<");
+        print("ERROR: Invalid LocalBus Read >" + repr(rts_mesa) + "<");
         rts_mesa = self.mesa_bus.rd();
-        print("ERROR2: Invalid LocalBus Read >" + rts_mesa + "<");
+        print("ERROR2: Invalid LocalBus Read >" + repr(rts_mesa) + "<");
         if ( self.dbg_flag == "debug" ):
           sys.exit();
         rts += [ 0xdeadbeef ];
