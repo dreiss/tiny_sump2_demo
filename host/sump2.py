@@ -135,7 +135,7 @@ class main(object):
   self.math   = math;
   list2file( self, "sump2_manual.txt", init_manual(self ) );
 
-  locale.setlocale( locale.LC_NUMERIC, 'English' );
+  #locale.setlocale( locale.LC_NUMERIC, 'English' );
 
   init_globals( self );# Internal software variables
   self.file_log = open ( self.vars["file_log"] , 'w' );
